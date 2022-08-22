@@ -1,0 +1,207 @@
+
+nav{
+
+
+    width: 100vw;
+    height: 15vh;
+    max-height: 100px;
+
+    background-color: rgb(237, 237, 237);
+    
+    box-shadow: 0px 2px 20px rgb(223, 223, 223);
+
+
+}
+
+
+
+
+/*header ####################*/
+
+
+
+.navHeader{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navHeader>.logoContainer{
+    margin-left: 10px;
+
+
+    width: fit-content;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+.navHeader>.iconContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+
+}
+
+.navHeader>.iconContainer>.gitIcon{
+    box-shadow: 0px 0px 10px rgb(148, 146, 146);
+    border-radius: 5px;
+    
+    
+    width: 30px;
+    height: 30px;
+
+    transition: 300ms; /*anim at the end of file*/
+}
+
+
+.navHeader>.iconContainer>.menuIcon{
+    margin-right: 20px;
+
+    box-shadow: 0px 0px 10px rgb(148, 146, 146);
+    border-radius: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    transition: 300ms; /*anim at the end of file*/
+}
+
+
+.menuIcon>label:hover, .gitIcon:hover{
+    cursor: pointer;
+
+}
+
+
+
+
+/*The dropdown menu works here*/
+
+nav>#hideNav:checked ~ .navBody{
+    transform: translateY(-120vh);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*body ####################*/
+
+
+
+
+
+.navBody{
+    
+    position: absolute;
+    z-index: -3;
+
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(233, 231, 231);
+
+    transition: 600ms;
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+
+
+.navBody>.linkContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+
+    margin-top: 15px;
+    
+}
+
+
+
+.navBody>.linkContainer>.link{
+
+    width: 100%;
+
+    padding-left: 20px;
+    margin-top: 20px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 10px;
+
+
+    
+}.navBody>.linkContainer>.link:hover{
+    background-color: rgb(191, 190, 190);
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+
+
+/*
+
+to be able to select all the link, img gonna attach a event listener to them
+
+*/
+
+.navBody>.linkContainer>.link>a{
+
+    font-size: 22px;
+    color: black;
+
+}
+
+
+
+
+
+
+/* ----------------- animations ----------------- */
+
+
+/* ----------------- header icons animations ----------------- */
+
+.navHeader>.iconContainer>.gitIcon:hover{
+    background-color: rgb(191, 184, 184);
+}
+
+.navHeader>.iconContainer>.gitIcon:active{
+    background-color: rgb(190, 151, 195);
+    transition: 100ms;
+}
+
+
+.navHeader>.iconContainer>.menuIcon:hover{
+    background-color: rgb(191, 184, 184);
+
+}
+
+.navHeader>.iconContainer>.menuIcon:active{
+    background-color: rgb(190, 151, 195);
+    transition: 100ms;
+}
+
+

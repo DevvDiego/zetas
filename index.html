@@ -1,14 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index pagina original</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+
+
+    <link rel="shortcut icon" href="img/dzd.png" type="image/x-icon">
+    <title>Dozzed - main</title>
+    
+    
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/default.css">
+
+    <!--Js at the bottom-->
+    
+
 </head>
 <body>
-    
-    <img src="https://picsum.photos/200" alt="loremptoho" height="200px" width="200px">
+
+
+    <nav>
+
+        <input type="checkbox" id="hideNav" name="hideNav" checked hidden >
+
+        <div class="navHeader">
+
+            <div class="logoContainer">
+                <!--Illustration by <a href="https://icons8.com/illustrations/author/GrbQqWBEhaDS">Liam Moore</a> from <a href="https://icons8.com/illustrations">Ouch!</a>-->
+                <img src="img/3D_Cat.png" alt="Logo Dgeti y SEP">
+            </div>
+
+
+
+            <div class="iconContainer">
+                                
+                <div class="gitIcon" onclick="window.location='https://github.com/diego-ans/' ">
+                    <img src="img/GitLogo.png" alt="GitLogo">
+                </div>
+
+
+
+                <div class="menuIcon">
+                    <label for="hideNav">
+                        <img src="img/menuIcon.png" alt="MenuIcon" id="state">
+                    </label>
+                </div>
+
+            </div>
+
+
+            
+        </div>
+
+
+
+        <div class="navBody">
+
+
+            <div class="linkContainer">
+                
+                <!--
+
+                    i use onclick instead of the href in <a> tag
+                    to be able to redirect from the div
+                        
+                    ( i only leave the <a> tag to mark that it is a redirect link  )
+
+                -->
+
+                <div class="link" onclick="window.location='https://github.com/diego-ans/'">
+
+                    <div>
+                        <img src="img/GitLogo.png" alt="GitLogo">
+                    </div>
+
+                    <a href="https://github.com/diego-ans/">
+                        Github
+                    </a>
+
+                </div>
+
+
+                <div class="link" onclick="window.location='html/projects.html'">
+
+                    <div>
+                        <img src="img/folderIcon.png" alt="folderIcon">
+                    </div>
+
+                    <a href="html/projects.html">
+                        Projects
+                    </a>
+
+                </div>
+
+                <br>
+                <hr>
+
+                <div class="link" onclick="location='html/devHistory.html'">
+
+                    <div>
+                        <img src="img/questionIcon.png" alt="questionIcon">
+                    </div>
+
+                    <a href="html/devHistory.html">
+                        My dev history
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+
+        
+
+
+
+
 
 </body>
+
+<script src="js/script_Menu.js"></script>
 </html>
