@@ -1,0 +1,33 @@
+
+#Content{
+    display: none;
+    opacity: 0;
+}
+
+#Loading{
+    opacity: 0;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    width: 90vw;
+    height: 100vh;
+
+    animation: fade 3s infinite;
+}
+
+
+
+
+@keyframes fade {
+    0%    { opacity: 0.9; }
+    50%{opacity: 0;}
+    100%  { opacity: 0.9; }
+  }

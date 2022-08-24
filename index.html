@@ -14,19 +14,29 @@
 </head>
 <body>
 
+    <div id="Loading">
+        <p>Loading</p>
+    </div>
 
-    <div id="grid-SingupContainer">
-
-        <h1>SignUp</h1>
-
-        <h3>Email</h3>
-        <input type="email" name="email" id="email" required placeholder="Email">
-
-        <h3>Password</h3>
-        <input type="password" name="password" id="password">
-
+    <div id="Content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit illo quos excepturi cumque harum? Cum corporis iste sint atque.
     </div>
 
 
+    <script> //loading screen script
+
+        document.addEventListener("DOMContentLoaded",(e)=>{
+            const loadingScreen = document.querySelector("#Loading");
+            const Content = document.querySelector("#Content");
+            
+            loadingScreen.style.opacity="0";
+            loadingScreen.style.display="none";
+
+            Content.style.opacity="1";
+            Content.style.display="block";
+
+        });
+
+    </script>
 </body>
 </html>
