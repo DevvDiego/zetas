@@ -1,9 +1,7 @@
 
 # My dev story
 
-This project was just made to make a sort of profile
-to describe what i know as a dev, and what
-projects have i built
+Made as a fun project to learn the audio API in browsers
 
 
 ## Authors
