@@ -4,50 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ola</title>
+    <title>Zetas</title>
 
-
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/index.css">
-
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="start">Click to start</div>
 
-    <div id="Loading">
-        <p>Loading</p>
-    </div>
-
-    <div id="Content">
-    
+    <div id="content">
+            
         <main>
 
-            <div class="wrapper">
-                <div class="header">Header</div>
-                <div class="sidebar">Sidebar</div>
-                <div class="content">Content</div>
-                <div class="footer">Footer</div>
+            <div id="callCard">
+                <div id="grid_iconContainer">
+                    <div class="user">
+                        <img src="assets/user.png" alt="">
+                    </div>
+
+
+                    <div class="timer">
+                        <h2>00:00</h2>
+                    </div>
+
+
+                    <div class="actionIcons">
+                        
+                        <div class="microphone">
+                            <img src="assets/microphone.png" alt="">
+                        </div>
+
+                        <div class="numpad">
+                            <img src="assets/numpad.png" alt="">
+                        </div>
+
+                        <div class="speaker">
+                            <img src="assets/speaker.jfif" alt="">
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            
+
+
         </main>
+
+
+        <div id="startStop">
+            <button id="stop">Detener</button>
+            <button id="init">Iniciar</button>    
+        </div>
 
     </div>
 
 
-    <script> //loading screen script
-
-        document.addEventListener("DOMContentLoaded",(e)=>{
-            const loadingScreen = document.querySelector("#Loading");
-            const Content = document.querySelector("#Content");
-            
-            loadingScreen.style.opacity="0";
-            loadingScreen.style.display="none";
-
-            Content.style.opacity="1";
-            Content.style.display="block";
-
-        });
-
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
