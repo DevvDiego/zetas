@@ -1,5 +1,5 @@
 
-# My dev story
+# The zetas project
 
 Made as a fun project to learn the audio API in browsers
 
