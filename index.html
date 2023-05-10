@@ -9,77 +9,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="start">
 
-        <div id="callCard">
-            <div id="AcceptCallScreen">
-                <div class="user_2">
-                    <img src="assets/user.png" alt="">
-                    <div id="callIcon">
-                        <img src="assets/call.png" alt="">
-                    </div>
-                </div>
+    <main id="screen1">
 
-
-                <div class="timer">
-                    
-                </div>
-
-
-
+        
+        <section id="callHeader">
+            <div class="imgContainer personIcon">
+                <img src="assets/svg/personSVG.svg" alt="persona">
             </div>
-        </div>
+        </section>
+
+
+        <section id="callBody">
+            <div class="row">
+                <div class="s_1tinyImg greenTouch">
+                    <img src="assets/svg/acceptCall.svg" alt="mic disabled">
+                </div>
+
+                <div class="s_1tinyImg redTouch">
+                    <img src="assets/svg/denyCall.svg" alt="speaker">
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <main id="screen2" style="display:none;">
+        
+        
+        <section id="callHeader">
+            <div class="imgContainer personIcon">
+                <img src="assets/svg/personSVG.svg" alt="persona">
+            </div>
+        </section>
 
 
 
 
-    </div>
-
-    <div id="content">
+        <section id="callBody">
             
-        <main>
+            <h3 id="timer">00:00:00</h3>
+            <div class="row">
+                <div class="tinyImg">
+                    <img src="assets/svg/micDisabled.svg" alt="mic disabled">
+                </div>
 
-            <div id="callCard">
-                <div id="grid_iconContainer">
-                    <div class="user">
-                        <img src="assets/user.png" alt="">
-                    </div>
-
-
-                    <div class="timer">
-                        <h2>00:00</h2>
-                    </div>
-
-
-                    <div class="actionIcons">
-                        
-                        <div class="microphone">
-                            <img src="assets/microphone.png" alt="">
-                        </div>
-
-                        <div class="numpad">
-                            <img src="assets/numpad.png" alt="">
-                        </div>
-
-                        <div class="speaker">
-                            <img src="assets/speaker.jfif" alt="">
-                        </div>
-                    </div>
-
+                <div class="tinyImg">
+                    <img src="assets/svg/speaker.svg" alt="speaker">
                 </div>
             </div>
 
 
-        </main>
+        </section>
 
 
-        <div id="startStop">
-            <button id="stop">Detener</button>
-            <button id="init">Iniciar</button>    
-        </div>
-
-    </div>
-
+    </main>
 
 <script src="script.js"></script>
 </body>
